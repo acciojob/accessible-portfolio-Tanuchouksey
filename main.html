@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading" aria-level="1">Tanu - Web Developer</h1>
+    </header>
 
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <img role="img" src="https://th.bing.com/th/id/OIP.gSzbjfS2WkH0NJYRSdQeXgHaE8?rs=1&pid=ImgDetMain" alt="John Doe smiling" width="200">
+            <p>Hello! I'm Tanu, a passionate web developer specializing in creating accessible and user-friendly websites.</p>
+        </section>
+
+        <section id="projects">
+            <h2 role="heading" aria-level="2">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Portfolio Website</li>
+                <li role="listitem">E-commerce Platform</li>
+                <li role="listitem">Accessibility Checker</li>
+            </ul>
+        </section>
+    </main>
+
+    
 </body>
-
 </html>
